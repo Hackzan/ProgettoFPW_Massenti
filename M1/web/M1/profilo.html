@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css" media="screen">
+        <title>FreePeerRevieW</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <header>
+            <img src="img/FPWlogo.png" width="100" height="100" id="fpwlogo">
+            <img src="img/scritta.png" width="500" height="100" id="scritta">
+        </header>
+        <nav>  
+            <ul id="navb">
+                <li id="linav"><a href="articoli.html" id="navtit">Articoli</a></li>
+                <li id="linav"><a href="valutazione.html" id="navtit">Valutazione</a></li>
+                <li id="linav"><a href="profilo.html" id="navtit">Profilo</a></li>
+            </ul>
+        </nav>
+        
+        <aside class="asd">
+            
+            <h4>Ciao, Mario</h4>
+            
+            <input type="button" class="invio" value="LOGOUT" id="logout">
+            
+            <div class="mioart">
+                <h4>I miei articoli:</h4>
+                <ul id="ulasd">
+                    <li><a href="">La Bibbia</a></li>
+                    <li><a href="">Luna</a></li>
+                    <li><a href="">Little Boy</a></li>                    
+                </ul>
+            </div>
+            
+            <div class="mioart">
+                <h4>Da Valutare:</h4>
+                <ul id="ulasd">
+                    <li><a href="">Latte e Miele</a></li>
+                    <li><a href="">Come si chiama Ublado?</a></li>
+                    <li><a href="">Giampiero o Gianpiero?</a></li>                    
+                </ul>
+            </div>
+           
+            
+           
+            
+        </aside>
+        
+        <article class="art">
+            
+            <section>
+                <img src="img/profilo.png" height="150" width="150" id="imgprof">
+            </section>
+            
+            <section id="titprof">
+                <h1>PROFILO</h1>
+            </section>
+            
+            <form id="formprof">
+                <ul id="ulprof">
+                    <li>
+                        <label id="txtprof">Nome:</label>
+                        <input type="text" name="nome" id="nprof">
+                    </li>
+                    
+                    <li>
+                        <label id="txtprof">Cognome:</label>
+                        <input type="text" name="nome" id="cprof">
+                    </li>
+                    
+                    <li>
+                        <label id="txtprof">Foto:</label>
+                        <input type="url" name="nome" id="fprof">
+                    </li>
+                    
+                    <li>
+                        <label id="txtprof">Email:</label>
+                        <input type="email" name="nome" id="emprof">
+                    </li>
+                    
+                    <li>
+                        <label id="txtprof">Password:</label>
+                        <input type="password" name="nome" id="pprof">
+                    </li>
+                    
+                    <li>
+                        <label id="txtprof">Ente:</label>
+                        <input type="url" name="nome" id="enprof">
+                    </li>
+                </ul>
+                
+                <input type="button" class="invio" value="SALVA">
+            </form>
+            
+            <section><a  href="profilo.html" id="cancprof">Cancellati</a></section>
+            
+        </article>
+        
+            
+        
+    </body>
+</html>

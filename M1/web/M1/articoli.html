@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="Articoli, Valutazioni, Bibbia, Luna, Little Boy, Fat Man">
+        <link rel="stylesheet" type="text/css" href="style.css" media="screen">
+        <title>FPW-Articoli</title>
+        
+    </head>
+    <body>
+        <header>
+            <img src="img/FPWlogo.png" width="100" height="100" id="fpwlogo">
+            <img src="img/scritta.png" width="500" height="100" id="scritta">
+        </header>
+        
+        <nav>  
+            <ul id="navb">
+                <li id="linav"><a href="articoli.html" id="navtit">Articoli</a></li>
+                <li id="linav"><a href="valutazione.html" id="navtit">Valutazione</a></li>
+                <li id="linav"><a href="profilo.html" id="navtit">Profilo</a></li>
+            </ul>
+        </nav>
+        
+        <aside class="asd">
+            
+            <h4>Ciao, Mario</h4>
+            
+            <input type="button" class="invio" value="LOGOUT" id="logout">
+            
+            <div class="mioart">
+                <h4>I miei articoli:</h4>
+                <ul id="ulasd">
+                    <li><a href="">La Bibbia</a></li>
+                    <li><a href="">Luna</a></li>
+                    <li><a href="">Little Boy</a></li>                    
+                </ul>
+            </div>
+            
+            <div class="mioart">
+                <h4>Da Valutare:</h4>
+                <ul id="ulasd">
+                    <li><a href="">Latte e Miele</a></li>
+                    <li><a href="">Come si chiama Ublado?</a></li>
+                    <li><a href="">Giampiero o Gianpiero?</a></li>                    
+                </ul>
+            </div>
+           
+            
+           
+            
+        </aside>
+        
+        <article class="art">
+            <section class="tit_val">I MIEI ARTICOLI:</section>
+                <table>
+                    <tr>
+                        <th id="tabh">Data</th>
+                        <th id="tabh">Titolo</th>
+                        <th id="tabh">Stato</th>
+                        <th id="tabh">Cancella o Modifica</th>
+                    </tr>
+                
+                    <tr id="dis">
+                        <td>11/12/1983</td>
+                        <td>La Bibbia</td>
+                        <td id="rif">Rifiutato</td>
+                        <td></td>
+                    </tr>
+                
+                    <tr id="par">
+                        <td>20/07/1969</td>
+                        <td>Luna</td>
+                        <td id="acc">Accettato</td>
+                        <td></td>
+                    </tr>
+                
+                    <tr id="dis">
+                        <td>6/08/1945</td>
+                        <td>Little Boy</td>
+                        <td id="valut">Valutazione</td>
+                        <td><input type="button" id="canc" ></td>
+                    </tr>
+                
+                    <tr id="par">
+                        <td>9/08/1945</td>
+                        <td>Fat Man</td>
+                        <td id="ape">Aperto</td>
+                        <td><input type="button" id="mod" ><input type="button" id="canc" ></td>
+                    </tr>
+                
+                
+                </table>
+            
+            <section>
+                <a href="scriviArticolo.html" id="ana"><input type="button" value="Nuovo Articolo" class="invio" id="na"></a>
+            </section>
+            
+        </article>
+    </body>
+</html>

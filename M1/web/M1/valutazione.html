@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css" media="screen">
+        <title>FPW-Valutazione</title>
+    </head>
+    <body>
+        <header>
+            <img src="img/FPWlogo.png" width="100" height="100" id="fpwlogo">
+            <img src="img/scritta.png" width="500" height="100" id="scritta">
+        </header>
+        <nav>  
+            <ul id="navb">
+                <li id="linav"><a href="articoli.html" id="navtit">Articoli</a></li>
+                <li id="linav"><a href="valutazione.html" id="navtit">Valutazione</a></li>
+                <li id="linav"><a href="profilo.html" id="navtit">Profilo</a></li>
+            </ul>
+        </nav>
+        
+        <aside class="asd">
+            
+            <h4>Ciao, Mario</h4>
+            
+            <input type="button" class="invio" value="LOGOUT" id="logout">
+            
+            <div class="mioart">
+                <h4>I miei articoli:</h4>
+                <ul id="ulasd">
+                    <li><a href="">La Bibbia</a></li>
+                    <li><a href="">Luna</a></li>
+                    <li><a href="">Little Boy</a></li>                    
+                </ul>
+            </div>
+            
+            <div class="mioart">
+                <h4>Da Valutare:</h4>
+                <ul id="ulasd">
+                    <li><a href="">Latte e Miele</a></li>
+                    <li><a href="">Come si chiama Ublado?</a></li>
+                    <li><a href="">Giampiero o Gianpiero?</a></li>                    
+                </ul>
+            </div>
+           
+            
+           
+            
+        </aside>        
+       
+        <article class="art">
+            <section class="tit_val">
+                Free Peer RevieW!
+            </section>
+            
+            <section class="aut_val">
+                Tonio Cartonio
+            </section>
+            
+            <section class="img_val">
+                <img title="immagine valutzione" alt="Foto cinema" src="img/img_val.jpg" width="600" height="300">
+            </section>
+            
+            <section class="aut_val">
+                <h5>Categorie: HTML, CSS Data: 12 Novembre 2015</h5>
+            </section>
+            
+            <section class="testo_val">
+                Benvenuti su FPW (Free Peer Review)! Questo sito è un gestore 
+                per la valutazione di articoli da proporre alla nostra famosissima 
+                e importantissima conferenza. Ci saranno tanti autori che parleranno
+                ed esporranno i loro articoli. Mi raccomando non mancare!
+            </section>
+            
+            <form>
+                <h3>Vota l'articolo e lascia un commento!</h3>            
+            
+                <section class="checks">  
+                    <label class="checkb">1
+                        <input type="radio" name="voto" id="votocb" value="1">
+                        <span class="checkvot"></span>
+                    </label>
+                    <label class="checkb">2
+                        <input type="radio" name="voto" id="votocb" value="2">
+                        <span class="checkvot"></span>
+                    </label>
+                    <label class="checkb">3
+                        <input type="radio" name="voto" id="votocb" value="3">
+                        <span class="checkvot"></span>
+                    </label>
+                    <label class="checkb">4
+                        <input type="radio" name="voto" id="votocb" value="4">
+                        <span class="checkvot"></span>
+                    </label>
+                    <label class="checkb">5
+                        <input type="radio" name="voto" id="votocb" value="5">
+                        <span class="checkvot"></span>
+                    </label>
+                </section>
+                
+                <section>
+                    <label id="com_a">Commento per gli autori</label>
+                    <textarea rows="4" cols="20" name="com_autori" id="com_a"></textarea>
+                </section>
+                
+                <section>
+                    <label id="com_o">Commento per gli organizzatori</label>
+                    <textarea rows="4" cols="20" name="com_organizzatori" id="com_o"></textarea>
+                </section>
+                
+                <input type="button" value="INVIO!" class="invio">
+            </form>
+            
+        </article>
+   
+    </body>
+</html>

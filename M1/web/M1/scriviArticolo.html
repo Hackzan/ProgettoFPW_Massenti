@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css" media="screen">
+        <title>FPW-ScriviArticolo</title>
+        
+    </head>
+    <body>
+        <header>
+            <img src="img/FPWlogo.png" width="100" height="100" id="fpwlogo">
+            <img src="img/scritta.png" width="500" height="100" id="scritta">
+        </header>
+        
+        <nav>  
+            <ul id="navb">
+                <li id="linav"><a href="articoli.html" id="navtit">Articoli</a></li>
+                <li id="linav"><a href="valutazione.html" id="navtit">Valutazione</a></li>
+                <li id="linav"><a href="profilo.html" id="navtit">Profilo</a></li>
+            </ul>
+        </nav>
+        
+        <aside class="asd">
+            
+            <h4>Ciao, Mario</h4>
+            
+            <input type="button" class="invio" value="LOGOUT" id="logout">
+            
+            <div class="mioart">
+                <h4>I miei articoli:</h4>
+                <ul id="ulasd">
+                    <li><a href="">La Bibbia</a></li>
+                    <li><a href="">Luna</a></li>
+                    <li><a href="">Little Boy</a></li>                    
+                </ul>
+            </div>
+            
+            <div class="mioart">
+                <h4>Da Valutare:</h4>
+                <ul id="ulasd">
+                    <li><a href="">Latte e Miele</a></li>
+                    <li><a href="">Come si chiama Ublado?</a></li>
+                    <li><a href="">Giampiero o Gianpiero?</a></li>                    
+                </ul>
+            </div>
+        </aside>
+            
+  
+        
+        <article class="art" id="nart">
+            
+            <section>
+                <h1> NUOVO ARTICOLO </h1>
+            </section>
+            
+            <form>
+                <label>
+                    Titolo: 
+                </label>
+                
+                <input name="titolo" type="text" >
+                
+                
+                <section id="autori">
+                    Autori:
+                    
+                    <ul id="aut">
+                        <li>
+                            Maurizio Ligas
+                        </li>
+                        <li>
+                            Ubaldo Scanu
+                        </li>
+                    </ul>
+                </section>
+                
+                <section id="aggaut">
+                    <label>
+                        Aggiungi Autore: 
+                    </label>
+                    
+                    <input type="text" name="nuovo_autore">
+                    <input type="button" value="+" id="add">
+                </section>
+                
+                
+                <p>Categorie:</p>
+                
+                <section class="checks" id="categ">
+                    <label class="checkb" >HTML
+                        <input type="checkbox" name="voto"  value="html">
+                        <span class="checkvot" id="selcat"></span>
+                    </label>
+                    <label class="checkb">CSS
+                        <input type="checkbox" name="voto" value="css">
+                        <span class="checkvot" id="selcat"></span>
+                    </label>
+                    <label class="checkb">Servlet
+                        <input type="checkbox" name="voto" value="slet">
+                        <span class="checkvot" id="selcat"></span>
+                    </label>
+                    <label class="checkb">JSP
+                        <input type="checkbox" name="voto" value="jsp">
+                        <span class="checkvot" id="selcat"></span>
+                    </label>
+                    <label class="checkb">JavaScript
+                        <input type="checkbox" name="voto" value="jS">
+                        <span class="checkvot" id="selcat"></span>
+                    </label>
+                     <label class="checkb">AJAX
+                        <input type="checkbox" name="voto" value="ajax">
+                        <span class="checkvot" id="selcat"></span>
+                    </label>
+                </section>
+                
+                <section id="urlimg">
+                    <label>URL Immagine:</label>
+                    <input type="url" name="urlimg">
+                </section>
+                
+                <section id="dataart">
+                    <label>Data:</label>
+                    <input type="date">
+                </section>
+                
+                <section>
+                    <label>
+                        Testo:
+                    </label>
+                    <textarea rows="6" cols="36" name="newtxt" id="newtxt"></textarea>
+                </section>
+                
+                <input type="button" class="invio" value="SALVA"  id="salva">
+                
+            </form>
+        </article>
+        
+        
+    </body>
+</html>
