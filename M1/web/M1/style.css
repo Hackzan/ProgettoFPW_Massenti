@@ -1,0 +1,696 @@
+
+/*
+Viene impostato lo sfondo della pagina utilizzando lo background del body con il colore in esadecimale
+*/
+body{
+    background:  #f2f2f2;
+}
+
+/*
+Si crea lo stile del tag h1: la famiglia del font è Times, grandezza 30px e grossetto.
+Il colore in questo caso è impostato utilizzando il formato rgb
+*/
+
+h1{
+    font-weight: bold;
+    font-size: 30px;
+    font-family: times;
+    color: rgb(232,116,0);
+}
+
+/*
+    La classe logo imposta il logo con un'immagine presa dalla cartella img, 
+    viene impostata la sua grandezza e la si mette nel centro.
+    
+
+
+.logo{
+    height: 50px;
+    width: 300px;
+    background-image: url('img/logo5.png');
+    background-position: center;
+    background-size: 100%;
+    text-align: center;
+    font-family: Mv Boli;
+    font-size: 110px;
+    color: rgb(0,162,232);
+}
+*/
+
+/*
+    Si modifica la lista della navbar facendo allineare i vari link a destra,
+    si cre un padding, il colore iniziale delle scritte è bianco
+
+*/
+#linav{
+    display: inline;
+    float: left;
+    padding-right: 30px;
+    color: white;  
+}
+
+/*
+    Il logo viene posizionato 
+*/
+#logo{
+    float: left;
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-right: 75px;
+}
+
+
+/*
+    Il link della navbar sono bianchi senza nesuna decorazione se non sono mai stati cliccati
+*/
+#navtit:link{
+    text-decoration: none;
+    color: white;
+}
+
+
+/*
+    Come la il cursore passa sopra un link della navbar cambiano colore il grigio e raaddoppiaano la loro grandezza
+*/
+#navtit:hover{ 
+    color: gray;
+    font-size: 20px;
+    
+}
+
+/*
+    Se il link è già stato visitato il colore cambia in nero
+*/
+#navtit:visited{
+    color: black;
+}
+
+/*
+    Viene creato lo stile della navbar
+*/
+
+#navb{
+    list-style-type: none;   
+    overflow: hidden;
+    background-color: rgb(255,125,38); 
+    z-index: 2; 
+    padding-left: 42%;
+    padding-top: 1%;
+    width: 58%;
+    height: 25px;
+    margin-top: 6px;
+    
+}
+
+
+/*
+    Attraverso la seguente classe si crea lo stile di ogni article
+*/
+.art{
+    bottom: 361px;
+    position: relative;
+    background-color: white;
+    width: 700px;
+    left: 300px;
+    font-family: Mv Boli;
+    border-radius: 10%;
+    padding: 10px;
+    z-index: 1;
+}
+
+/*
+    Si crea la classe del div del login
+*/
+.login{
+    top: 100px;
+    position: relative;
+    background-color: white;
+    left: 400px;
+    font-family: Mv Boli;
+    border-radius: 10%;
+    z-index: 1;
+    width: 500px;
+    padding: 10px;
+    text-align: center;
+}
+
+
+/*
+    Si crea lo stile del titolo dell'articolo da valutare nella pagina valutazione.html
+*/
+.tit_val{
+    color: rgb(232,116,0);
+    text-align:center;
+    font-family: Times;
+    text-decoration: underline;
+    font-size: 50px;
+}
+
+
+
+/*
+    Si crea lo stile dell'autore dell'articolo da valutare nella pagina valutazione.html
+*/
+.aut_val{
+    text-align: left;
+    font-size: 18px;
+}
+
+
+/*
+    Viene centrata l'immagine dell'articolo
+*/
+.img_val{
+    text-align: center;
+}
+
+
+/*
+    Si crea lo stile del tag h4
+*/
+h4{
+   font-weight: bold;
+   margin-bottom: 10px;
+}
+
+
+/*
+    Si crea lo stile del testo da valutare, viene giustificato
+*/
+.testo_val{
+    position: relative;
+    font-size: 15px;
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+/*
+    Si crea lo stile della section che deve contenere le cheeckbox
+*/
+.checks{
+    position: relative;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/*
+    Si imposta il font e si posizionano le textarea che doranno contenre i commenti per gli autori e gli organizzatori individuati dagli id: com_a e com_o
+*/
+textarea#com_a{
+    margin-left: 100px; 
+    font-family: Mv Boli;
+}
+
+
+textarea#com_o{
+    margin-left: 49px;
+    font-family: Mv Boli;
+}
+/*
+    Si posizionano le etichette delle  textarea com_o e com_a
+*/
+label#com_o{
+    position: relative;
+    bottom: 50px;
+}
+
+label#com_a{
+    position: relative;
+    bottom: 50px;
+}
+
+
+/*
+    Questa classe crea lo stile di tutti i bottoni del sito
+*/
+.invio{
+    position: relative;
+    top: 10px;
+    left: 45%;
+    margin-bottom: 10px;
+    height: 50px;
+    width: 130px;
+    background-color: rgb(255,127,39);
+    border-radius: 5%;
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+
+/*
+    Si posiziona il bottone identificato dall'id accedi
+*/
+.invio#accedi{
+    left: 0%;
+}
+/*
+    Si posiziona l'etichetta delle chackbox
+*/
+.checkb{
+    padding-right: 25px;
+    padding-left: 25px;
+    width: 70px;
+}
+
+
+/*
+    Si imposta lo stile delle radiobutton tra cui il cambio del cursore in puntatore
+*/
+.checkb input{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/*
+    Classe che nasconde i radiobutton di default e crea lo stile di quelli nuovi 
+*/
+
+.checkvot{
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    margin-left: 10px;
+    background-color: rgb(255,127,39);
+    border-radius: 50%;
+    
+}
+
+/*
+    se il cursore passa sorpa diventano rossi
+*/
+.checkb:hover input ~ .checkvot{
+    background-color: red;
+}
+
+/*
+    Crea il cerchio bianco del radiobutton
+*/
+.checkvot:after{
+    content: "";
+    position: absolute;
+    display: none;
+}
+/*
+    Una volta selezioato rimane il cerchio nel radiobutton
+*/
+.checkb input:checked ~ .checkvot:after{
+    display: block;
+}
+
+
+/*
+    Crea lo sile del cerchio della checkbox
+*/
+.checkb .checkvot:after{
+    top: 8px;
+    left: 8px;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: white;
+}
+
+/*
+    Viene creto lo sile della tabella della pagina articoli.html
+*/
+
+table{
+    width: 600px;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+/*
+    viene impostato lo sfondo del titolo di ogni colonna della tabella
+*/
+#tabh{
+    background-color: rgb(255,168,111);
+}
+
+/*
+    Si imposta il colore di sfondo delle righe dispari e pari. I rispettivi id sono dis e par 
+
+*/
+tr#dis{
+    background-color: rgb(255,233,202);
+}
+
+tr#par{
+    background-color: rgb(255,214,172);
+}
+
+
+/*
+    Imposta lo stile della scritta 'Rifiutato'
+
+*/
+#rif{
+    font-weight: bold;
+    color: red;
+}
+/*
+    Imposta lo stile della scritta 'Accettato'
+
+*/
+
+#acc{
+    font-weight: bold;
+    color: green;
+}
+
+
+/*
+    Imposta lo stile della scritta 'Valutazione'
+
+*/
+
+#valut{
+    font-weight: bold;
+    color: blue;
+}
+
+/*
+    Imposta lo stile della scritta 'Aperto'
+
+*/
+
+#ape{
+    font-weight: bold;
+    color: rgb(128,0,255);
+}
+
+
+/*
+    Imposta lo stile dei bottoni identificati dall'id canc e mod 
+*/
+#canc{
+    background-image: url(img/canc.png);
+    background-size: 100%;
+    background-repeat: round;
+}
+
+#mod{
+    background-image: url(img/mod.jpg);
+    background-size: 100%;
+    margin-right: 10px;
+}
+
+/*
+    Posizina il pulsante Nuovo Articolo
+*/
+.invio#na{
+    width: 200px;
+    margin-top: 20px;
+    margin-left: -70px;
+    
+}
+
+/*
+    Toglie lo stile del link 
+*/
+
+#ana{
+    text-decoration: none;
+}
+
+/*
+    Crea lo stile degli autori già inseriti
+*/
+#aut{
+    color: black;
+    font-size: 20px;
+    list-style-type: none;
+    margin-left: 75px;
+    position: relative;
+    bottom: 50px
+    
+}
+
+/*
+    si posizionano gli autori già inseriti
+*/
+#autori{
+    margin-top: 20px;
+    text-align: justify;
+    height: 70px;
+    
+}
+
+/*
+    Si posiziona il contenuto dell'article al centro
+*/
+.art#nart{
+    text-align: center;
+}
+
+
+/*
+    si crea lo stile del button add per aggiungere un nuovo autore
+*/
+#add{
+    padding-bottom: 1px;
+    background-color: rgb(255,127,39);
+    border-radius: 5%;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+
+/*
+    Si posizionano la label, la textbox e il bottone 
+*/
+#aggaut{
+    margin-right: 33px;
+}
+
+
+/*
+    Si posiziona la label e la textbox per inserire l'url dell'immagine 
+*/
+#urlimg{
+    margin-right: 61px;
+}
+
+
+/*
+    Si posiziona la sezione contenente le chekbox delle categorie
+*/
+#categ{
+    bottom: 20px;
+    padding-top: 20px; 
+}
+
+/*
+    si squadrano le checkbox
+*/
+#selcat{
+    border-radius: 0;
+}
+
+.checkvot#selcat:after{
+    content: "";
+    position: absolute;
+    display: none;
+}
+/*
+    Una volta selezioato rimane il quadrato nella checkbox
+*/
+.checkb input:checked ~ .checkvot#selcat:after{
+    display: block;
+}
+
+
+/*
+    Crea lo sile del quadrato della checkbox
+*/
+.checkb .checkvot#selcat:after{
+    top: 8px;
+    left: 8px;
+    width: 9px;
+    height: 9px;
+    border-radius: 0%;
+    background: white;
+}
+
+/*
+    Posiziona la section della  data
+*/
+#dataart{
+    margin-top: 20px;
+    margin-right: 13px;
+}
+
+/*
+    Posiziona la section del nuovo testo
+*/
+
+#newtxt{
+    margin-top: 20px;
+}
+
+/*
+    Posiziona il bottone 'Salva'
+*/
+.invio#salva{
+    margin-top: 20px;
+    left: 40px;
+    margin-bottom: 20px;
+}
+
+/*
+    Posiziona l'immagine del profilo
+*/
+#imgprof{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+/*
+    posiziona il titolo del profilo
+*/
+
+#titprof{
+    text-align: center;
+    position: relative;
+    bottom: 125px;
+}
+
+/*
+    Posiziona la lista per il form del profilo
+*/
+#ulprof{
+    list-style-type: none;
+    position: relative;
+    bottom: 25px;
+    margin-left: 200px;
+}
+
+
+/*
+    Crea lo stile dell'header
+*/
+header{
+    height: 150px;
+    padding-top: 30px;
+    background-color: rgb(255,152,102);   
+}
+
+/*
+    Posiziona il logo fpw
+*/
+#fpwlogo{
+    margin-left: 50px;
+}
+
+/*
+    posiziona la scritta 'free peer review'
+*/
+#scritta{
+    margin-left: 250px;
+}
+
+/*
+    posiziona la label e la text box per inserire il nome
+*/
+#nprof{
+  margin-left: 30px;
+}
+
+/*
+    posiziona la label e la text box per inserire il cognome
+*/
+#cprof{
+    margin-left: 8.5px;
+    margin-top: 10px;
+}
+
+/*
+    posiziona la label e la text box per inserire la foto
+*/
+#fprof{
+    margin-left: 39px;
+    margin-top: 10px;
+}
+
+/*
+    posiziona la label e la text box per inserire l'e-mail
+*/
+#emprof{
+    margin-left: 34px;
+    margin-top: 10px;
+}
+
+/*
+    posiziona la label e la text box per inserire la password
+*/
+#pprof{
+    margin-left: 6px;
+    margin-top: 10px;
+}
+
+/*
+    posiziona la label e la text box per inserire l'ente
+*/
+
+#enprof{
+    margin-left: 38.5px;
+    margin-top: 10px;
+}
+
+/*
+    Stile del collegamento per cancellare il profilo
+*/
+#cancprof{
+    text-decoration: underline;
+    margin-left: 580px;
+}
+
+
+/*
+    Rimpicciolisce il pulsante del logout
+*/
+.invio#logout{
+    position: absolute;
+    font-size: 15px;
+    height: 25px;
+    top: 70px;
+    left: 60px;
+}
+/*
+    Crea lo stile dell'aside
+*/
+.asd{
+    position: -webkit-sticky;
+    position: sticky;                    
+    top: 20px;
+    background-color: white;
+    width: 250px;
+    height:350px;;
+    border-radius: 20%;
+    margin-bottom: 10px;
+    text-align: center;
+    padding-top: 10px;
+    z-index: 0;
+}
+
+/*
+    Posisiono la div con la classe .mioart
+*/
+
+.mioart{
+    position: relative;
+    top: 60px;
+}
+
+
+/*
+    Stile della lista dell'aside
+*/
+#ulasd{
+    list-style-type: none;
+    text-align: left;
+}
